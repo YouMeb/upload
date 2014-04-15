@@ -1,0 +1,13 @@
+{
+  "name": "upload",
+  "repo": "youmeb/upload",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "component/emitter": "*",
+    "poying/bind": "*"
+  }
+}
