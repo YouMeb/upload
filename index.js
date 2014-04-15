@@ -29,15 +29,15 @@ Upload.prototype.file = function (file) {
 };
 
 Upload.prototype.files = function (files) {
-  var formData = this._formData;
+  var form = this._form;
   var i, file;
   for (i = 0, file; file = files[i]; ++i) {
-    formData.append(file.name, file);
+    form.append(file.name, file);
   }
   return this;
 };
 
 Upload.prototype.end = function () {
-  xhr.send(formData);
+  xhr.send(this.form);
   return this;
 };
