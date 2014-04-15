@@ -39,5 +39,5 @@ Upload.prototype.files = function (files) {
 
 Upload.prototype.end = function () {
   xhr.send(formData);
-  return xhr;
+  return this;
 };
