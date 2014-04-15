@@ -10,7 +10,7 @@ Emitter(Upload.prototype);
 function Upload(url) {
   this._url = url;
   this._form = new FormData();
-  var xhr = this._xhr = XMLHttpRequest();
+  var xhr = this._xhr = new XMLHttpRequest();
 
   xhr.onload = bind(this.emit, this, 'load');
   xhr.onerror = bind(this.emit, this, 'error');
