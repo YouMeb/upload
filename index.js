@@ -5,7 +5,7 @@ module.exports = function (url, files) {
   return new Upload(url, files);
 };
 
-Emiter(Upload.prototype);
+Emitter(Upload.prototype);
 
 function Upload(url) {
   this._url = url;
