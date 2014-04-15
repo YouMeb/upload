@@ -30,7 +30,7 @@ Upload.prototype.file = function (file) {
 
 Upload.prototype.files = function (files) {
   var formData = this._formData;
-  var i;
+  var i, file;
   for (i = 0, file; file = files[i]; ++i) {
     formData.append(file.name, file);
   }
