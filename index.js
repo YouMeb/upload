@@ -38,6 +38,6 @@ Upload.prototype.files = function (files) {
 };
 
 Upload.prototype.end = function () {
-  xhr.send(this.form);
+  xhr.send(this._form);
   return this;
 };
